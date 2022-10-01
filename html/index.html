@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML i JavaScript</title>
+</head>
+<body>
+    
+    <p>Unesite input : <input type="text" id="ime"> </p>
+    <p> <button id="dugme">Alert imena </button> </p>
+    <p id="prikaz" ></p>
+    
+    
+    
+    
+    
+    <script>
+        
+
+            function dogadjaj_za_klik() {
+                const input_ime = document.getElementById("ime")
+                const p_prikaz = document.getElementById("prikaz")
+                //p_prikaz.style = "color: purple;"
+                p_prikaz.style.color = "orange"
+                p_prikaz.style.backgroundColor = "black"
+                p_prikaz.innerHTML = "Uneli ste: " + input_ime.value 
+            }
+
+            
+            const button_dugme = document.getElementById("dugme")
+
+            button_dugme.onclick = dogadjaj_za_klik
+
+
+
+
+    </script>
+</body>
+</html>
